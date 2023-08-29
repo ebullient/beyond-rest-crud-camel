@@ -16,14 +16,14 @@ In this talk, we’ll use Apache Camel to explore integration patterns that add 
 ### Integration patterns in Microservices
 
 ::: block
-![typing](assets/img/profile/typing.jpg) 
+![typing](../assets/img/profile/typing.jpg) 
 :::<!-- element style="margin-top: 10%" -->
 
 <span>Erin Schnabel, Red Hat<br />[github.com/ebullient](https://github.com/ebullient) ・ [www.ebullient.dev](https://www.ebullient.dev/)</span><!-- element class="footer" -->
 
 ---
 
-<!-- slide: data-background-image="assets/img/profile/erin-devoxx-2022-tall.jpg" class="fade-max left" -->
+<!-- slide: data-background-image="../assets/img/profile/erin-devoxx-2022-tall.jpg" class="fade-max left" -->
 ### A bit about me...
 
 - Developer of things at Red Hat
@@ -34,13 +34,13 @@ In this talk, we’ll use Apache Camel to explore integration patterns that add 
 
 ---
 
-![](assets/img/IMG_6E8F83CFEFB1-1.jpeg)
+![](../assets/IMG_6E8F83CFEFB1-1.jpeg)
 
 ---
 <!-- .slide: class="no-title" -->
 ### We're still talking about microservices?
 
-![](assets/img/microservices/martin-fowler-microservices.png)
+![](../assets/img/microservices/martin-fowler-microservices.png)
 
 https://www.martinfowler.com/articles/microservices.html<!-- element class="attribution bottom" -->
 
@@ -48,7 +48,7 @@ https://www.martinfowler.com/articles/microservices.html<!-- element class="attr
 <!-- .slide: class="no-title" -->
 ### Monolithic vs. Microservices.. ?
 
-![chapter5-architecture](assets/img/microservices/chapter5-architecture.png)
+![chapter5-architecture](../assets/img/microservices/chapter5-architecture.png)
 
 ---
 
@@ -61,29 +61,29 @@ Disposable
 </grid>
 
 <grid drag="50 100" drop="right">
-![twelve-factors](assets/img/microservices/twelve-factors.png)
+![twelve-factors](../assets/img/microservices/twelve-factors.png)
 </grid>
 
 ---
 <!-- .slide: class="no-title" -->
 ### Evolution of a system...
-![gameontext](assets/img/projects/gameontext.png)
-![Progression.001](assets/img/2023-devnexus/Progression.001.jpeg) <!-- element class="center fragment" -->
-![Progression.002](assets/img/2023-devnexus/Progression.002.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.002](assets/img/2023-devnexus/Progression.002.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.003](assets/img/2023-devnexus/Progression.003.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.004](assets/img/2023-devnexus/Progression.004.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.005](assets/img/2023-devnexus/Progression.005.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.006](assets/img/2023-devnexus/Progression.006.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.007](assets/img/2023-devnexus/Progression.007.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.008](assets/img/2023-devnexus/Progression.008.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.009](assets/img/2023-devnexus/Progression.009.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.010](assets/img/2023-devnexus/Progression.010.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.011](assets/img/2023-devnexus/Progression.011.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.012](assets/img/2023-devnexus/Progression.012.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.013](assets/img/2023-devnexus/Progression.013.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.014](assets/img/2023-devnexus/Progression.014.jpeg)<!-- element class="center fragment fade-in" -->
-![Progression.015](assets/img/2023-devnexus/Progression.015.jpeg)<!-- element class="center fragment fade-in" -->
+![gameontext](../assets/img/projects/gameontext.png)
+![Progression.001](../assets/img/2023-devnexus/Progression.001.jpeg) <!-- element class="center fragment" -->
+![Progression.002](../assets/img/2023-devnexus/Progression.002.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.002](../assets/img/2023-devnexus/Progression.002.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.003](../assets/img/2023-devnexus/Progression.003.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.004](../assets/img/2023-devnexus/Progression.004.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.005](../assets/img/2023-devnexus/Progression.005.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.006](../assets/img/2023-devnexus/Progression.006.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.007](../assets/img/2023-devnexus/Progression.007.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.008](../assets/img/2023-devnexus/Progression.008.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.009](../assets/img/2023-devnexus/Progression.009.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.010](../assets/img/2023-devnexus/Progression.010.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.011](../assets/img/2023-devnexus/Progression.011.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.012](../assets/img/2023-devnexus/Progression.012.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.013](../assets/img/2023-devnexus/Progression.013.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.014](../assets/img/2023-devnexus/Progression.014.jpeg)<!-- element class="center fragment fade-in" -->
+![Progression.015](../assets/img/2023-devnexus/Progression.015.jpeg)<!-- element class="center fragment fade-in" -->
 
 ---
 
@@ -112,14 +112,14 @@ Best practices
 </grid>
 
 <grid drag="50 100" drop="left">
-![enterprise-integration-patterns](assets/img/camel/enterprise-integration-patterns.jpg)
+![enterprise-integration-patterns](../assets/img/camel/enterprise-integration-patterns.jpg)
 </grid>
 
 ---
 <!-- .slide: data-auto-animate -->
 
 <grid drag="100 100" drop="-3">
-![camel-eip-things](assets/img/camel/camel-eip-things.png)<!-- element  class="fade no-margin" -->
+![camel-eip-things](../assets/img/camel/camel-eip-things.png)<!-- element  class="fade no-margin" -->
 </grid>
 
 <grid drag="50 100" drop="22" >
@@ -136,7 +136,7 @@ Best practices
 ### CAMEL is an acronym
 
 <grid drag="100 100" drop="-3">
-![camel-eip-things](assets/img/camel/camel-eip-things.png)<!-- element  class="fade no-margin" -->
+![camel-eip-things](../assets/img/camel/camel-eip-things.png)<!-- element  class="fade no-margin" -->
 </grid>
 
 <grid drag="50 100" drop="30" align="left" pad="0" class="acrostic monospace">
@@ -169,7 +169,7 @@ Best practices
 </grid>
 
 <grid drag="80 100" drop="50 0">
-![](assets/img/2023-devnexus/pockets-cli-output.png)
+![](../assets/img/2023-devnexus/pockets-cli-output.png)
 </grid>
 
 ---
@@ -177,13 +177,13 @@ Best practices
 ### Pockets: The plan
 
 <grid frag="0" class="current-visible" drag="70 70" drop="center" style="z-index: 1">
-![](assets/img/2023-devnexus/pockets-web-ui.png)
+![](../assets/img/2023-devnexus/pockets-web-ui.png)
 </grid>
 
 <grid frag="1" class="fade-out" drag="25 40" drop="2 12" bg="white" style="z-index: 0"/>%% pocket ui %% 
  
 <grid frag="1" class="current-visible" drag="70 70" drop="center" style="z-index: 1" class=" current-visible"> 
-![pockets-terminal](assets/img/2023-devnexus/pockets-terminal.png)
+![pockets-terminal](../assets/img/2023-devnexus/pockets-terminal.png)
 </grid>
 
 <grid frag="2" class="fade-out" drag="22 20" drop="4 68"  bg="white" style="z-index: 0" />%% pocket terminal %%
@@ -211,7 +211,7 @@ Best practices
 <grid frag="7" class="fade-out" drag="16 16" drop="82 42" rotate="0"  bg="white" style="z-index: 0" />%% whatever%%
 
 <grid drag="100 100" drop="center" style="z-index: -2">
-![2023-devnexus-pockets-terminal.excalidraw.light](assets/img/2023-devnexus/2023-devnexus-pockets-terminal.excalidraw.light.png)
+![2023-devnexus-pockets-terminal.excalidraw.light](../assets/img/2023-devnexus/2023-devnexus-pockets-terminal.excalidraw.light.png)
 </grid>
 
 ---
@@ -248,7 +248,7 @@ public class TheoreticalPockets {
 ### REST and REST... 
 
 <grid drag="90 60" drop="14 24">
-![pockets-camel-rest](assets/img/2023-devnexus/pockets-camel-rest.gif)<!-- element class="full-size" -->
+![pockets-camel-rest](../assets/img/2023-devnexus/pockets-camel-rest.gif)<!-- element class="full-size" -->
 </grid>
 
 ::: block
@@ -260,11 +260,11 @@ REST *component* adds support for REST semantics, including a DSL.
 ### Flow of data with Camel Route: REST
 
 <grid drag="100 30" drop="0 12" style="z-index: -2">
-![2023-devnexus-rest-data-flow.light](assets/img/2023-devnexus/2023-devnexus-rest-data-flow.light.png)
+![2023-devnexus-rest-data-flow.light](../assets/img/2023-devnexus/2023-devnexus-rest-data-flow.light.png)
 </grid>
 
 <grid frag="0" class="fade-out" drag="100 30" drop="0 12" style="z-index: 0">
-![request-response](assets/img/camel/request-response.png)
+![request-response](../assets/img/camel/request-response.png)
 </grid>
 
 <grid frag="0" class="fade-out" drag="100 40" drop="5 40" bg="white" style="z-index: 0">
@@ -285,7 +285,7 @@ REST *component* adds support for REST semantics, including a DSL.
 
 
 <grid drag="80 65" drop="12 36"  style="z-index: -3" >
-![pockets-rest-validate-and-modify](assets/img/2023-devnexus/pockets-rest-validate-and-modify.png)<!-- element class="full-size" -->
+![pockets-rest-validate-and-modify](../assets/img/2023-devnexus/pockets-rest-validate-and-modify.png)<!-- element class="full-size" -->
 </grid>
 
 <grid frag="1" class="fade-out" drag="12 20" drop="18 14" bg="white" style="z-index: -1" />%% debug-pipe-1 %%
@@ -348,10 +348,10 @@ REST *component* adds support for REST semantics, including a DSL.
 ### Flow of data with Camel Route: CLI %% 1 %%
 
 <grid drag="10 10" drop="-2 -6" style="z-index: 0">
-![camel-logo](assets/img/camel/camel-logo.svg)
+![camel-logo](../assets/img/camel/camel-logo.svg)
 </grid>
 <grid drag="10 10" drop="-12 -6" style="z-index: 0">
-![chocolatey-app-icon](assets/img/quarkus/chocolatey-app-icon.png)
+![chocolatey-app-icon](../assets/img/quarkus/chocolatey-app-icon.png)
 </grid>
 
 <grid drag="100 40" drop="0 35" bg="white" style="z-index: 0">
@@ -389,10 +389,10 @@ public final Integer call() {
 ### Flow of data with Camel Route: CLI %% 2 %%
 
 <grid drag="10 10" drop="-2 -6" style="z-index: 0">
-![camel-logo](assets/img/camel/camel-logo.svg)
+![camel-logo](../assets/img/camel/camel-logo.svg)
 </grid>
 <grid drag="10 10" drop="-12 -6" style="z-index: 0">
-![chocolatey-app-icon](assets/img/quarkus/chocolatey-app-icon.png)
+![chocolatey-app-icon](../assets/img/quarkus/chocolatey-app-icon.png)
 </grid>
 
 <grid drag="100 40" drop="0 35" bg="white" style="z-index: 0">
@@ -426,10 +426,10 @@ public final Integer call() {
 ### Flow of data with Camel Route: CLI %% 3 %%
 
 <grid drag="10 10" drop="-2 -6" style="z-index: 0">
-![camel-logo](assets/img/camel/camel-logo.svg)
+![camel-logo](../assets/img/camel/camel-logo.svg)
 </grid>
 <grid drag="10 10" drop="-12 -6" style="z-index: 0">
-![chocolatey-app-icon](assets/img/quarkus/chocolatey-app-icon.png)
+![chocolatey-app-icon](../assets/img/quarkus/chocolatey-app-icon.png)
 </grid>
 
 <grid drag="100 40" drop="0 35" bg="white" style="z-index: 0">
@@ -455,14 +455,14 @@ CliModifyPocket modifyPocketRoute;
 ### Flow of data with Camel Route: CLI %% 4 %%
 
 <grid drag="10 10" drop="-2 -6" style="z-index: 1">
-![camel-logo](assets/img/camel/camel-logo.svg)
+![camel-logo](../assets/img/camel/camel-logo.svg)
 </grid>
 <grid drag="10 10" drop="-12 -6" style="z-index: 1">
-![chocolatey-app-icon](assets/img/quarkus/chocolatey-app-icon.png)
+![chocolatey-app-icon](../assets/img/quarkus/chocolatey-app-icon.png)
 </grid>
 
 <grid drag="100 30" drop="0 12" style="z-index: -2">
-![2023-devnexus-cli-data-flow.light](assets/img/2023-devnexus/2023-devnexus-cli-data-flow.light.png)
+![2023-devnexus-cli-data-flow.light](../assets/img/2023-devnexus/2023-devnexus-cli-data-flow.light.png)
 </grid>
 
 <grid drag="70 30" drop="10 50" bg="white" style="z-index: -2">
@@ -540,7 +540,7 @@ from("direct:emitRoute")
 <!-- .slide: data-auto-animate -->
 ### Common path: Recipient List
 
-![RecipientListIcon](assets/img/camel/RecipientListIcon.gif)
+![RecipientListIcon](../assets/img/camel/RecipientListIcon.gif)
 
 ::: block
 ```java[2,4,6-7,12,14-15,17]
@@ -569,7 +569,7 @@ public void emitRoute(Exchange exchange) {
 <!-- .slide: data-auto-animate -->
 ### Common path: Recipient List
 
-![RecipientListIcon](assets/img/camel/RecipientListIcon.gif)
+![RecipientListIcon](../assets/img/camel/RecipientListIcon.gif)
 
 ::: block
 ```java[4-5]
@@ -609,7 +609,7 @@ from("direct:jsonEmitter")
 
 ### Common path: Markdown emitter
 
-![pockets-cli-markdown-emitter](assets/img/2023-devnexus/pockets-cli-markdown-emitter.png)
+![pockets-cli-markdown-emitter](../assets/img/2023-devnexus/pockets-cli-markdown-emitter.png)
 
 ---
 
@@ -634,7 +634,7 @@ from("direct:markdownFile")
 
 ---
 
-![typing](assets/img/profile/typing.jpg)<!-- element style="margin-top: 10%" -->
+![typing](../assets/img/profile/typing.jpg)<!-- element style="margin-top: 10%" -->
 
 ---
 
@@ -649,6 +649,6 @@ from("direct:markdownFile")
 
 ---
 
-![typing](assets/img/profile/typing.jpg)<!-- element style="margin-top: 10%" -->
+![typing](../assets/img/profile/typing.jpg)<!-- element style="margin-top: 10%" -->
 
 *\~fin\~*

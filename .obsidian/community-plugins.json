@@ -6,8 +6,9 @@
   "cm-show-whitespace-obsidian",
   "templater-obsidian",
   "customjs",
-  "obsidian-advanced-slides",
   "obsidian-image-toolkit",
   "pane-relief",
-  "no-dupe-leaves"
+  "no-dupe-leaves",
+  "obsidian-advanced-slides",
+  "folder-notes"
 ]
