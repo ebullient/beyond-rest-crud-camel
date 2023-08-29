@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=IBM+Plex+Sans:wght@300;400;700&display=swap');
+@import "ebullientworks-colors.css";
+@import "ebullient-variable.css";
+body {
+  --r-link-color: var(--teal-4);
+  --r-link-color-dark: var(--teal-5);
+  --r-link-color-hover: var(--green-4);
+  --r-bold-color: var(--blue-4);
+  --r-italic-color: var(--pink-4);
+  --r-selection-background-color: var(--pink-5);
+  --r-main-font: 'Optima', 'IBM Plex Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.bottom {
+  position: absolute;
+  bottom: 20px;
+  width:100%;
+  text-align: center;
+}
+table tr > td:last-child {
+  color: var(--r-faint);
+  font-size: .8em;
+}

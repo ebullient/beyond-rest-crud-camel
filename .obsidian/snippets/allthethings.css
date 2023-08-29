@@ -1,0 +1,439 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+body {
+  --nav-item-background-hover: var(--alpha2) !important;
+}
+
+.theme-dark {
+  --athenaeum: var(--cyan-3);
+  --chronicles: var(--blue-3);
+  --demesne: var(--purple-3);
+  --quests: var(--pink-3);
+  --folder-label: var(--gray-light-2);
+  --alpha2: rgba(0, 0, 0, 0.2);
+  --alpha4: rgba(0, 0, 0, 0.4);
+}
+
+.theme-light {
+  --athenaeum: var(--cyan-4);
+  --chronicles: var(--blue-4);
+  --demesne: var(--purple-4);
+  --quests: var(--pink-4);
+  --alpha2: rgba(0, 0, 0, 0.05);
+  --alpha4: rgba(0, 0, 0, 0.1);
+}
+
+.nav-folder-children .nav-folder-title[data-path=athenaeum] {
+  --nav-item-color: var(--athenaeum);
+  --nav-item-color-hover: var(--athenaeum);
+  --nav-item-size: 1.3em;
+  font-family: var(--ebw-font-tags);
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+.nav-folder-children .nav-folder-title[data-path^=athenaeum],
+.nav-folder-children .nav-file-title[data-path^=athenaeum] {
+  color: var(--athenaeum);
+}
+.nav-folder-children body:not(.is-grabbing) .nav-file-title[data-path^=athenaeum]:hover,
+.nav-folder-children .nav-folder-title[data-path^=athenaeum].is-being-dragged,
+.nav-folder-children .nav-folder-title[data-path^=athenaeum]:hover,
+.nav-folder-children body:not(.is-grabbing) .nav-folder-title[data-path^=athenaeum]:hover,
+.nav-folder-children .nav-file-title[data-path^=athenaeum].is-being-dragged,
+.nav-folder-children .nav-file-title[data-path^=athenaeum]:hover {
+  color: var(--athenaeum);
+}
+.nav-folder-children .nav-file-title[data-path*=athenaeum].is-active,
+.nav-folder-children .nav-folder-title[data-path*=athenaeum].is-active {
+  color: var(--athenaeum);
+  font-style: italic;
+}
+.nav-folder-children .nav-folder-title[data-path=chronicles] {
+  --nav-item-color: var(--chronicles);
+  --nav-item-color-hover: var(--chronicles);
+  --nav-item-size: 1.3em;
+  font-family: var(--ebw-font-tags);
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+.nav-folder-children .nav-folder-title[data-path^=chronicles],
+.nav-folder-children .nav-file-title[data-path^=chronicles] {
+  color: var(--chronicles);
+}
+.nav-folder-children body:not(.is-grabbing) .nav-file-title[data-path^=chronicles]:hover,
+.nav-folder-children .nav-folder-title[data-path^=chronicles].is-being-dragged,
+.nav-folder-children .nav-folder-title[data-path^=chronicles]:hover,
+.nav-folder-children body:not(.is-grabbing) .nav-folder-title[data-path^=chronicles]:hover,
+.nav-folder-children .nav-file-title[data-path^=chronicles].is-being-dragged,
+.nav-folder-children .nav-file-title[data-path^=chronicles]:hover {
+  color: var(--chronicles);
+}
+.nav-folder-children .nav-file-title[data-path*=chronicles].is-active,
+.nav-folder-children .nav-folder-title[data-path*=chronicles].is-active {
+  color: var(--chronicles);
+  font-style: italic;
+}
+.nav-folder-children .nav-folder-title[data-path=demesne] {
+  --nav-item-color: var(--demesne);
+  --nav-item-color-hover: var(--demesne);
+  --nav-item-size: 1.3em;
+  font-family: var(--ebw-font-tags);
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+.nav-folder-children .nav-folder-title[data-path^=demesne],
+.nav-folder-children .nav-file-title[data-path^=demesne] {
+  color: var(--demesne);
+}
+.nav-folder-children body:not(.is-grabbing) .nav-file-title[data-path^=demesne]:hover,
+.nav-folder-children .nav-folder-title[data-path^=demesne].is-being-dragged,
+.nav-folder-children .nav-folder-title[data-path^=demesne]:hover,
+.nav-folder-children body:not(.is-grabbing) .nav-folder-title[data-path^=demesne]:hover,
+.nav-folder-children .nav-file-title[data-path^=demesne].is-being-dragged,
+.nav-folder-children .nav-file-title[data-path^=demesne]:hover {
+  color: var(--demesne);
+}
+.nav-folder-children .nav-file-title[data-path*=demesne].is-active,
+.nav-folder-children .nav-folder-title[data-path*=demesne].is-active {
+  color: var(--demesne);
+  font-style: italic;
+}
+.nav-folder-children .nav-folder-title[data-path=quests] {
+  --nav-item-color: var(--quests);
+  --nav-item-color-hover: var(--quests);
+  --nav-item-size: 1.3em;
+  font-family: var(--ebw-font-tags);
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+.nav-folder-children .nav-folder-title[data-path^=quests],
+.nav-folder-children .nav-file-title[data-path^=quests] {
+  color: var(--quests);
+}
+.nav-folder-children body:not(.is-grabbing) .nav-file-title[data-path^=quests]:hover,
+.nav-folder-children .nav-folder-title[data-path^=quests].is-being-dragged,
+.nav-folder-children .nav-folder-title[data-path^=quests]:hover,
+.nav-folder-children body:not(.is-grabbing) .nav-folder-title[data-path^=quests]:hover,
+.nav-folder-children .nav-file-title[data-path^=quests].is-being-dragged,
+.nav-folder-children .nav-file-title[data-path^=quests]:hover {
+  color: var(--quests);
+}
+.nav-folder-children .nav-file-title[data-path*=quests].is-active,
+.nav-folder-children .nav-folder-title[data-path*=quests].is-active {
+  color: var(--quests);
+  font-style: italic;
+}
+
+body {
+  --admonition-activity: unset;
+  --admonition-fey: 234, 160, 207;
+  --admonition-mood: 223,173,166;
+}
+
+.theme-light {
+  --admonition-fey: 219, 89, 171;
+  --admonition-mood: 188,83,69;
+}
+
+.callout-title-inner {
+  font-size: var(--font-ui-medium);
+}
+
+.rendered-widget .callout[data-callout=fey],
+.markdown-rendered .callout[data-callout=fey],
+.markdown-preview-section .callout[data-callout=fey] {
+  --callout-color: var(--admonition-fey);
+}
+.rendered-widget .callout[data-callout=activity],
+.markdown-rendered .callout[data-callout=activity],
+.markdown-preview-section .callout[data-callout=activity] {
+  --callout-color: var(--admonition-activity);
+}
+.rendered-widget .callout[data-callout=mood],
+.markdown-rendered .callout[data-callout=mood],
+.markdown-preview-section .callout[data-callout=mood] {
+  --callout-color: var(--admonition-mood);
+}
+.rendered-widget .callout[data-callout=scratch],
+.markdown-rendered .callout[data-callout=scratch],
+.markdown-preview-section .callout[data-callout=scratch] {
+  --callout-color: var(--admonition-activity);
+}
+.rendered-widget .callout[data-callout=scratch] .callout-title,
+.markdown-rendered .callout[data-callout=scratch] .callout-title,
+.markdown-preview-section .callout[data-callout=scratch] .callout-title {
+  display: none;
+}
+.rendered-widget .callout[data-callout=scratch] .callout-content,
+.markdown-rendered .callout[data-callout=scratch] .callout-content,
+.markdown-preview-section .callout[data-callout=scratch] .callout-content {
+  font-family: "Nothing You Could Do";
+}
+
+div.modal-content .callout[data-callout=activity] {
+  float: unset;
+  min-width: unset;
+  margin-left: unset;
+}
+
+@media (min-width: 600px) {
+  .rendered-widget .callout[data-callout=activity],
+  .markdown-rendered .callout[data-callout=activity] {
+    float: right;
+    width: 250px;
+    margin-left: 10px;
+  }
+  .rendered-widget .callout[data-callout=activity] .callout-content ul,
+  .markdown-rendered .callout[data-callout=activity] .callout-content ul {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 30px;
+  }
+}
+/*
+ * Custom embed behavior
+ */
+div[alt="What do I want"] .markdown-embed .markdown-embed-link,
+div[alt="What do I want"] .markdown-embed .markdown-preview-view h3,
+div[alt="Erin's core values"] .markdown-embed .markdown-embed-link,
+div[alt="Erin's core values"] .markdown-embed .markdown-preview-view h2 {
+  display: none;
+}
+
+div[alt=Upcoming] .markdown-embed li[data-line="0"] {
+  display: none;
+}
+
+body:not(.is-mobile) div[alt="What do I want"].internal-embed,
+body:not(.is-mobile) div[alt="Erin's core values"].internal-embed {
+  position: relative;
+  margin-top: -14px;
+}
+body:not(.is-mobile) div[alt="What do I want"].internal-embed > .markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-section {
+  min-height: unset !important;
+  padding-bottom: 5px !important;
+}
+body:not(.is-mobile) div[alt="What do I want"].internal-embed > .markdown-embed > .markdown-embed-content > .markdown-preview-view ul, body:not(.is-mobile) div[alt="What do I want"].internal-embed > .markdown-embed > .markdown-embed-content > .markdown-preview-view ol {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+body:not(.is-mobile) div[alt="Erin's core values"].internal-embed > .markdown-embed > .markdown-embed-content > .markdown-preview-view .markdown-preview-section {
+  min-height: unset !important;
+  padding-bottom: 5px !important;
+}
+body:not(.is-mobile) div[alt="Erin's core values"].internal-embed > .markdown-embed > .markdown-embed-content > .markdown-preview-view ol {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+/*
+* Custom workspace tab icons
+*/
+.mod-right-split .workspace-tab-header[aria-label=core-values] > .workspace-tab-header-inner > .workspace-tab-header-inner-icon {
+  width: 17px;
+  height: 17px;
+  /* encoded using https://yoksel.github.io/url-encoder/ */
+  background-image: url("data:image/svg+xml,%3Csvg width='17px' height='17px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Egear%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='web-app' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='gear' fill='%239e9e9e' fill-rule='nonzero'%3E%3Cpath d='M11,19.9381062 C9.53929151,19.7559585 8.20087908,19.1800111 7.09435615,18.3198574 L5.63603897,19.7781746 L4.22182541,18.363961 L5.68014258,16.9056439 C4.81998894,15.7991209 4.24404153,14.4607085 4.06189375,13 L2,13 L2,11 L4.06189375,11 C4.24404153,9.53929151 4.81998894,8.20087908 5.68014258,7.09435615 L4.22182541,5.63603897 L5.63603897,4.22182541 L7.09435615,5.68014258 C8.20087908,4.81998894 9.53929151,4.24404153 11,4.06189375 L11,2 L13,2 L13,4.06189375 C14.4607085,4.24404153 15.7991209,4.81998894 16.9056439,5.68014258 L18.363961,4.22182541 L19.7781746,5.63603897 L18.3198574,7.09435615 C19.1800111,8.20087908 19.7559585,9.53929151 19.9381062,11 L22,11 L22,13 L19.9381062,13 C19.7559585,14.4607085 19.1800111,15.7991209 18.3198574,16.9056439 L19.7781746,18.363961 L18.363961,19.7781746 L16.9056439,18.3198574 C15.7991209,19.1800111 14.4607085,19.7559585 13,19.9381062 L13,22 L11,22 L11,19.9381062 Z M12,17 C14.7614237,17 17,14.7614237 17,12 C17,9.23857625 14.7614237,7 12,7 C9.23857625,7 7,9.23857625 7,12 C7,14.7614237 9.23857625,17 12,17 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: none;
+  border-radius: 4px;
+}
+.mod-right-split .workspace-tab-header[aria-label=core-values] > .workspace-tab-header-inner > .workspace-tab-header-inner-icon > svg {
+  display: none;
+}
+.mod-right-split .workspace-tab-header[aria-label=goals] > .workspace-tab-header-inner > .workspace-tab-header-inner-icon {
+  width: 17px;
+  height: 17px;
+  /* encoded using https://yoksel.github.io/url-encoder/ */
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='17px' height='17px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Etrophy%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='event' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='trophy' fill='%239e9e9e'%3E%3Cpath d='M6.20703249,9 L6,9 C4.8954305,9 4,8.1045695 4,7 C4,5.8954305 4.8954305,5 6,5 L6,4 C6,2.8954305 6.8954305,2 8,2 L16,2 C17.1045695,2 18,2.8954305 18,4 L18,5 C19.1045695,5 20,5.8954305 20,7 C20,8.1045695 19.1045695,9 18,9 L17.7929675,9 C17.1837508,11.1539554 15.2951592,12.7707506 13,12.9775785 L13,17 L14,17 C15.1045695,17 16,17.8954305 16,19 L16,20 L17,20 C17.5522847,20 18,20.4477153 18,21 C18,21.5522847 17.5522847,22 17,22 L7,22 C6.44771525,22 6,21.5522847 6,21 C6,20.4477153 6.44771525,20 7,20 L8,20 L8,19 C8,17.8954305 8.8954305,17 10,17 L11,17 L11,12.9775785 C8.70484079,12.7707506 6.81624919,11.1539554 6.20703249,9 Z M8,4 L8,7.5 C8,9.43299662 9.56700338,11 11.5,11 L12.5,11 C14.4329966,11 16,9.43299662 16,7.5 L16,4 L8,4 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: none;
+  border-radius: 4px;
+}
+.mod-right-split .workspace-tab-header[aria-label=goals] > .workspace-tab-header-inner > .workspace-tab-header-inner-icon > svg {
+  display: none;
+}
+
+body {
+  --admonition-charm: 211,141,159;
+  --admonition-charm-text: var(--admonition-charm);
+  --admonition-letter: 98, 159, 197;
+  --admonition-npc: 102, 121, 137;
+  --admonition-scene: 139, 167, 145;
+  --admonition-skill: 236,201,134;
+  --admonition-skill-text: var(--admonition-skill);
+  --admonition-weather: 53,119,174;
+  --admonition-flowchart: 72,72,72;
+}
+
+.theme-light {
+  --admonition-charm: 222,170,184;
+  --admonition-charm-text: 167,92,112;
+  --admonition-npc: 58, 125, 127;
+  --admonition-scene: 92, 122, 99;
+  --admonition-skill: 221,178,84;
+  --admonition-skill-text: 157,101,83;
+}
+
+.callout[data-callout=charm] {
+  --callout-color: var(--admonition-charm);
+  --callout-title-color: rgb(var(--admonition-charm-text));
+}
+.callout[data-callout=charm] .callout-title {
+  color: var(--callout-title-color);
+}
+
+.callout[data-callout=letter] {
+  --callout-color: var(--admonition-letter);
+}
+
+.callout[data-callout=npc] {
+  --callout-color: var(--admonition-npc);
+}
+
+.callout[data-callout=scene] {
+  --callout-color: var(--admonition-scene);
+}
+
+.callout[data-callout=skill] {
+  --callout-color: var(--admonition-skill);
+  --callout-title-color: rgb(var(--admonition-skill-text));
+}
+
+.callout[data-callout=weather] {
+  --callout-color: var(--admonition-weather);
+}
+
+.callout[data-callout=flowchart] {
+  --callout-color: var(--admonition-flowchart);
+  --callout-border-width: 0.10rem;
+}
+
+.json5e-background div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-class div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-deity div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-feat div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-item div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-monster div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-note div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-race div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]),
+.json5e-spell div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]) {
+  position: relative;
+}
+.json5e-background div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-class div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-deity div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-feat div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-item div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-monster div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-note div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-race div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after,
+.json5e-spell div:has(> .callout[data-callout=flowchart]):has(+ div > .callout[data-callout=flowchart]):after {
+  content: "↓";
+  color: var(--admonition-flowchart);
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: 7px;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  text-align: center;
+}
+.json5e-background .callout[data-callout=gallery],
+.json5e-class .callout[data-callout=gallery],
+.json5e-deity .callout[data-callout=gallery],
+.json5e-feat .callout[data-callout=gallery],
+.json5e-item .callout[data-callout=gallery],
+.json5e-monster .callout[data-callout=gallery],
+.json5e-note .callout[data-callout=gallery],
+.json5e-race .callout[data-callout=gallery],
+.json5e-spell .callout[data-callout=gallery] {
+  --callout-color: transparent;
+  --callout-border-width: 0;
+}
+.json5e-background .callout[data-callout=gallery] .callout-content,
+.json5e-class .callout[data-callout=gallery] .callout-content,
+.json5e-deity .callout[data-callout=gallery] .callout-content,
+.json5e-feat .callout[data-callout=gallery] .callout-content,
+.json5e-item .callout[data-callout=gallery] .callout-content,
+.json5e-monster .callout[data-callout=gallery] .callout-content,
+.json5e-note .callout[data-callout=gallery] .callout-content,
+.json5e-race .callout[data-callout=gallery] .callout-content,
+.json5e-spell .callout[data-callout=gallery] .callout-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.json5e-background .callout[data-callout=gallery] .callout-content p,
+.json5e-class .callout[data-callout=gallery] .callout-content p,
+.json5e-deity .callout[data-callout=gallery] .callout-content p,
+.json5e-feat .callout[data-callout=gallery] .callout-content p,
+.json5e-item .callout[data-callout=gallery] .callout-content p,
+.json5e-monster .callout[data-callout=gallery] .callout-content p,
+.json5e-note .callout[data-callout=gallery] .callout-content p,
+.json5e-race .callout[data-callout=gallery] .callout-content p,
+.json5e-spell .callout[data-callout=gallery] .callout-content p {
+  display: none;
+}
+.json5e-background .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-class .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-deity .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-feat .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-item .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-monster .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-note .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-race .callout[data-callout=gallery] .callout-content div[src$="#gallery"],
+.json5e-spell .callout[data-callout=gallery] .callout-content div[src$="#gallery"] {
+  max-width: 49%;
+}
+.json5e-background .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-class .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-deity .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-feat .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-item .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-monster .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-note .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-race .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img,
+.json5e-spell .callout[data-callout=gallery] .callout-content div[src$="#gallery"] img {
+  max-height: 60vh;
+}
+.json5e-background .callout[data-callout=gallery] .callout-title,
+.json5e-class .callout[data-callout=gallery] .callout-title,
+.json5e-deity .callout[data-callout=gallery] .callout-title,
+.json5e-feat .callout[data-callout=gallery] .callout-title,
+.json5e-item .callout[data-callout=gallery] .callout-title,
+.json5e-monster .callout[data-callout=gallery] .callout-title,
+.json5e-note .callout[data-callout=gallery] .callout-title,
+.json5e-race .callout[data-callout=gallery] .callout-title,
+.json5e-spell .callout[data-callout=gallery] .callout-title {
+  display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    --tab-stacked-pane-width: 800px;
+  }
+}
+.workspace-tabs .workspace-leaf {
+  background-color: var(--background-secondary-alt);
+}
+
+.cmdr-adder {
+  display: none;
+}
+
+table.no-alt-rows {
+  --table-background: transparent;
+  --table-row-alt-background: transparent;
+  --table-column-alt-background: transparent;
+}
+
+h1 {
+  --heading-spacing: .5em;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../src/allthethings.scss%22,%22../src/fragments/_51-folder-icons.scss%22,%22../src/fragments/_50-folder-color-mixin.scss%22,%22../src/fragments/_52-admonitions.scss%22,%22../src/fragments/_53-custom-embed.scss%22,%22../src/fragments/_54-custom-tab-icons-mixin.scss%22,%22../src/dnd5e/_admonitions.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAAQ;ACCR;EACE;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;;;AClBA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEF;AAAA;EAEE;;AAEF;AAAA;AAAA;AAAA;AAAA;AAAA;EAME;;AAEF;AAAA;EAEE,ODDsC;ECEtC;;AAvBF;EACE;EACA;EACA;EACA;EACA;EACA;;AAEF;AAAA;EAEE;;AAEF;AAAA;AAAA;AAAA;AAAA;AAAA;EAME;;AAEF;AAAA;EAEE;EACA;;AAvBF;EACE;EACA;EACA;EACA;EACA;EACA;;AAEF;AAAA;EAEE;;AAEF;AAAA;AAAA;AAAA;AAAA;AAAA;EAME;;AAEF;AAAA;EAEE,ODCoC;ECApC;;AAvBF;EACE;EACA;EACA;EACA;EACA;EACA;;AAEF;AAAA;EAEE;;AAEF;AAAA;AAAA;AAAA;AAAA;AAAA;EAME;;AAEF;AAAA;EAEE,ODEmC;ECDnC;;;ACxBJ;EAEE;EACA;EACA;;;AAEF;EACE;EACA;;;AAGF;EACE;;;AAUA;AAAA;AAAA;EACE;;AAEF;AAAA;AAAA;EACE;;AAEF;AAAA;AAAA;EACE;;AAEF;AAAA;AAAA;EACE;;AACA;AAAA;AAAA;EACE;;AAEF;AAAA;AAAA;EACE;;;AAMJ;EACE;EACA;EACA;;;AAIJ;EAGI;AAAA;IACE;IACA;IACA;;EAEA;AAAA;IACE;IACA;IACA;IACA;IACA;IACA;;;AChER;AAAA;AAAA;AAGA;AAAA;AAAA;AAAA;EAIE;;;AAEF;EACE;;;AAIA;AAAA;EAEE;EACA;;AAGA;EACE;EACA;;AAEF;EACE;EACA;;AAIF;EACE;EACA;;AAEF;EACE;EACA;;;ACpCN;AAAA;AAAA;AAKI;EACE;EACA;AACA;EACA;EACA;EACA;;AAEF;EACE;;AATF;EACE;EACA;AACA;EACA;EACA;EACA;;AAEF;EACE;;;ACdN;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;;AACA;EACE;;;AAGJ;EACE;;;AAEF;EACE;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AAWA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;;AAEA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;EACA;;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;EACA;EACA;EACA;;AAEA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;;AAGF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;;AAIN;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACE;;;ANrFN;EACE;IACE;;;AAGJ;EACE;;;AAEF;EACE;;;AAEF;EACE;EACA;EACA;;;AAEF;EACE%22,%22file%22:%22allthethings.css%22%7D */
